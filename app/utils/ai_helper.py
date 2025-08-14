@@ -1,16 +1,17 @@
 import google.generativeai as genai
-import os
 import json
 import streamlit as st # Hata mesajları için
 
 def setup_gemini_client():
     """Gemini API client'ı ayarlar."""
-    api_key = os.getenv("GOOGLE_API_KEY")
-    if not api_key:
-        st.error("Google API Key is not set. Please set GOOGLE_API_KEY in your .env file.")
+    try:
+        api_key = st.secrets["GOOGLE_API_KEY"]
+    except KeyError:
+        st.error("Google API Key is not set. Please set GOOGLE_API_KEY in Streamlit secrets.")
         return None
+    
     genai.configure(api_key=api_key)
-    model_name = os.getenv("GEMINI_MODEL", "gemini-pro") # .env'den oku, yoksa gemini-pro kullan
+    model_name = st.secrets.get("GEMINI_MODEL", "gemini-pro")
     try:
         model = genai.GenerativeModel(model_name)
         return model
