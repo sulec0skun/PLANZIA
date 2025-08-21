@@ -3,6 +3,21 @@ import json
 from dotenv import load_dotenv
 import os
 
+
+def load_css(file_name):
+    import os
+    import streamlit as st
+
+    base_path = os.path.dirname(os.path.abspath(__file__))
+    full_path = os.path.join(base_path, "..", "styles", file_name)
+
+    try:
+        with open(full_path, "r", encoding="utf-8") as f:
+            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    except FileNotFoundError:
+        st.error(f"CSS dosyası bulunamadı: {full_path}")
+
+
 from app.utils.database import init_database, create_user, authenticate_user, create_event, get_event_by_code, save_preferences, get_event_preferences, update_event_suggestion, mark_event_as_approved, get_approved_events_for_user, get_event_creator
 from app.utils.helpers import generate_event_code, validate_event_code
 from app.utils.auth import hash_password, verify_password, render_login_form, render_register_form, logout
@@ -674,7 +689,7 @@ def show_ai_results():
 def main():
     st.set_page_config(page_title="PLANZIA", page_icon=":calendar:", layout="centered") # sidebar_state kaldırıldı
 
-    load_css("../styles/main.css")
+    load_css("main.css")
 
     if "logged_in" not in st.session_state:
         st.session_state["logged_in"] = False
