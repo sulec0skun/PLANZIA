@@ -674,7 +674,7 @@ def show_ai_results():
 def main():
     st.set_page_config(page_title="PLANZIA", page_icon=":calendar:", layout="centered") # sidebar_state kaldırıldı
 
-    load_css("styles/main.css")
+    load_css("../styles/main.css")
 
     if "logged_in" not in st.session_state:
         st.session_state["logged_in"] = False
