@@ -1,86 +1,62 @@
 /* Genel arka plan rengi */
 body {
-    background-color: #d224ec; /* Tüm sayfaların arka planı bu renk */
-    color: #FFFFFF; /* Metin rengi beyaz */
+    background-color: #d224ec !important; /* Tüm sayfa arka planı */
+    color: #FFFFFF !important; /* Varsayılan yazı rengi */
 }
 
-/* Sidebar arka plan rengi */
-.st-emotion-cache-1ldf3b0 { /* Streamlit sidebar elementi için CSS sınıfı */
-    background-color: #d224ec; /* Sidebar bu renk */
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Hafif gölge */
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #d224ec !important; /* Sidebar arka plan */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1) !important;
 }
 
-/* Ana içerik alanı arka planı */
-.st-emotion-cache-z5xrc { /* Streamlit ana içerik alanı için CSS sınıfı */
-    background-color: #ffffff; /* Ana içerik alanı beyaz kalabilir */
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Hafif kutu gölgesi */
+/* Ana içerik alanı */
+section.main {
+    background-color: #ffffff !important; /* İçerik alanı beyaz */
+    padding: 2rem !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
 }
 
 /* Başlıklar */
 h1, h2, h3, h4, h5, h6 {
-    color: #FFFFFF; /* Başlıklar beyaz */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 /* Butonlar */
 .stButton>button {
-    background-color: #6A0DAD; /* Mat mor */
-    color: #FFFFFF; /* Metin rengi beyaz */
-    border-radius: 5px;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #6A0DAD !important;
+    color: #FFFFFF !important;
+    border-radius: 5px !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
 }
 
 .stButton>button:hover {
-    background-color: #510B8D; /* Hover durumunda biraz daha koyu mor */
+    background-color: #510B8D !important;
 }
 
 /* Bilgi, Başarı, Uyarı, Hata Mesajları */
-.stAlert {
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 1rem;
-}
-
-.stAlert.info {
-    background-color: #e7f3fe;
-    color: #0c5460;
-    border-left: 5px solid #007bff;
-}
-
-.stAlert.success {
-    background-color: #d4edda;
-    color: #155724;
-    border-left: 5px solid #28a745;
-}
-
-.stAlert.warning {
-    background-color: #fff3cd;
-    color: #856404;
-    border-left: 5px solid #ffc107;
-}
-
-.stAlert.error {
-    background-color: #f8d7da;
-    color: #721c24;
-    border-left: 5px solid #dc3545;
+div[data-testid="stAlert"] {
+    border-radius: 5px !important;
+    padding: 15px !important;
+    margin-bottom: 1rem !important;
 }
 
 /* Text Input ve Selectbox */
-.stTextInput>div>div>input,
-.stSelectbox>div>div>div>div {
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    padding: 8px 12px;
+div[data-testid="stTextInput"] input,
+div[data-testid="stSelectbox"] div[data-baseweb="select"] {
+    border: 1px solid #ced4da !important;
+    border-radius: 5px !important;
+    padding: 8px 12px !important;
 }
 
-.stTextInput>div>div>input:focus,
-.stSelectbox>div>div>div>div:focus {
-    border-color: #6A0DAD; /* Odaklanma rengi buton rengiyle aynı olsun */
-    box-shadow: 0 0 0 0.2rem rgba(106, 13, 173, 0.25); /* Gölge rengi de mor tonunda */
+div[data-testid="stTextInput"] input:focus,
+div[data-testid="stSelectbox"] div[data-baseweb="select"]:focus {
+    border-color: #6A0DAD !important;
+    box-shadow: 0 0 0 0.2rem rgba(106, 13, 173, 0.25) !important;
 }
