@@ -53,7 +53,6 @@ Birbirinden farklı haftalık takvim, ilgi, mekân ve etkinlik tercihine sahip a
 
 ### 5. Veritabanı  
 - SQLite
-- 
 ### 6. Kimlik Doğrulama  
 - Streamlit Session State  
 - Python hashlib  
@@ -82,6 +81,3 @@ Birbirinden farklı haftalık takvim, ilgi, mekân ve etkinlik tercihine sahip a
   - google-generativeai  
   - python-dotenv  
   - requests  
-
-### 16. API Anahtarları & Konfigürasyon  
-`.env` dosyası örneği:  
