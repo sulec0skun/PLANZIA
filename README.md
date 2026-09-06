@@ -1,83 +1,84 @@
-# PLANZIA 🎯  
-**Yapay zekâ destekli etkinlik planlama uygulaması**
+# PLANZIA 🎯
+**AI-Powered Event Planning Application**
 
-## 🚩 Problem Tanımı  
-Birbirinden farklı haftalık takvim, ilgi, mekân ve etkinlik tercihine sahip arkadaş grupları, çiftler veya aileler için **ortak bir sosyalleşme etkinliği seçmek giderek zorlaşıyor.**  
+## 🚩 Problem
+Choosing a common social activity can become difficult for groups of friends, couples, or families with different schedules, interests, location preferences, and activity preferences.
 
-- Grup içindeki kişi sayısı arttıkça, karar verme süreci karmaşıklaşıyor.  
-- İnsanlar ya çok fazla zaman kaybediyor ya da kararsızlık yüzünden sosyal etkileşimlerini ertelemek zorunda kalıyor.  
-- Çoğu zaman seçilen etkinlikler grubun sadece bir kısmını memnun ediyor ve buluşmalar tatmin edici olmuyor.  
-
----
-
-## 👥 Kullanıcı Tanımı  
-- Farklı takvim, bütçe ve ilgi alanlarına sahip ergen, genç ve genç yetişkin sosyal gruplar (arkadaşlar, çiftler, aileler).  
-- Ortak etkinlik planlama konusunda zaman yönetimi ve karar verme zorluğu yaşayan bireyler.  
-- Sosyal buluşmalarında herkesin memnuniyetini sağlamak isteyen kullanıcılar.  
+- As the number of people in a group increases, decision-making becomes more complex.
+- People may spend too much time deciding or postpone social activities because of indecision.
+- The selected activity often satisfies only part of the group.
 
 ---
 
-## 💡 Çözüm: PLANZIA  
-**PLANZIA**, bu karmaşık süreci basitleştiren ve kullanıcıların ortak paydada buluşmasını sağlayan bir **yapay zekâ destekli web uygulamasıdır.**  
-
-- Kullanıcılar takvim, bütçe ve tercihlerini sisteme girer.  
-- Yapay zekâ algoritmaları bu verileri analiz eder ve **ortak ilgi alanlarına, uygun zamanlara ve bütçelere göre en uygun etkinlik önerilerini** sunar.  
-- Kullanıcılar geçmiş etkinliklere göz atabilir.
-  
-📌 Böylece karar verme süreci hem daha hızlı hem de daha tatmin edici hale gelir.  
+## 👥 Target Users
+- Social groups such as friends, couples, and families with different schedules, budgets, and interests.
+- People who struggle with time management and decision-making when planning group activities.
+- Users who want to find activities that better match the preferences of everyone in the group.
 
 ---
 
-## 🤖 AI’nın Rolü  
-- Kullanıcıların takvim ve tercihlerini işleyerek **ortak noktaları** bulur.  
-- Grup üyeleri arasında en uygun etkinliği seçmek için **çok parametreli optimizasyon** yapar.  
-- Kullanıcıların önceki tercihlerine göre **kişiselleştirilmiş öneriler** üretir.  
-- Karar verme sürecini kolaylaştırmak için **oyunlaştırma mekanizmaları** ekler.  
+## 💡 Solution: PLANZIA
+**PLANZIA** is an AI-powered web application designed to simplify group event planning and help users find common ground.
+
+- Users enter their schedules, budgets, and preferences.
+- The system analyzes this information and suggests suitable activities based on shared interests, available times, and budgets.
+- Users can also review their previous activities.
+
+📌 This makes the decision-making process faster and more convenient.
 
 ---
 
-## 🛠️ Teknoloji Yığını (Tech Stack)
+## 🤖 Role of AI
+- Processes user schedules and preferences to identify common patterns.
+- Evaluates multiple parameters when generating suitable activity suggestions.
+- Produces personalized recommendations based on user preferences.
+- Supports gamification mechanisms to make decision-making more engaging.
 
-### 1. Programlama Dili  
-- Python 3.9+  
+---
 
-### 2. Geliştirme Ortamı  
-- PyCharm Community Edition  
+## 🛠️ Tech Stack
 
-### 3. Frontend  
-- Streamlit  
+### Programming Language
+- Python 3.9+
 
-### 4. Backend  
-- Streamlit  
-- Python  
+### Development Environment
+- PyCharm Community Edition
 
-### 5. Veritabanı  
+### Frontend
+- Streamlit
+
+### Backend
+- Streamlit
+- Python
+
+### Database
 - SQLite
-### 6. Kimlik Doğrulama  
-- Streamlit Session State  
-- Python hashlib  
 
-### 7. Yapay Zekâ & Öneri Sistemi  
-- Google Gemini 2.0 Flash API  
+### Authentication
+- Streamlit Session State
+- Python `hashlib`
 
-### 8. Veri İşleme  
-- Python `datetime`  
+### AI & Recommendation System
+- Google Gemini 2.0 Flash API
 
-### 9. Deploy & Hosting  
-- Streamlit Cloud  
+### Data Processing
+- Python `datetime`
 
-### 10. Versiyon Kontrol  
-- Git  
-- GitHub  
+### Deployment & Hosting
+- Streamlit Cloud
 
-### 12. UI/UX  
-- Streamlit tema özelleştirme  
-- Custom CSS    
-- Mobile responsive yapı    
+### Version Control
+- Git
+- GitHub
 
-### 15. Gereksinim Dosyası  
-- `requirements.txt`  
-  - streamlit  
-  - google-generativeai  
-  - python-dotenv  
-  - requests  
+### UI/UX
+- Streamlit theme customization
+- Custom CSS
+- Mobile-responsive design
+
+### Dependencies
+- `requirements.txt`
+  - streamlit
+  - google-generativeai
+  - python-dotenv
+  - requests
