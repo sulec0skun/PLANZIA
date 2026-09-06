@@ -1,5 +1,6 @@
 # PLANZIA 🎯
 **AI-Powered Event Planning Application**
+[🚀 Live Demo](https://planzia.streamlit.app/)
 
 ## 🚩 Problem
 Choosing a common social activity can become difficult for groups of friends, couples, or families with different schedules, interests, location preferences, and activity preferences.
